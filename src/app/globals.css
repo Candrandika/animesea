@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.anime-card-img {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s ease all;
+    border-radius: 5px 5px 0px 0px;
+    transition: all .2s;
+}
+
+.anime-card-img:hover {
+    scale: 105%;
+    border-radius: 5px;
+}
+
+.detail-image {
+    min-width: 150px;
+}
+
+
+.custom-loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: 
+        radial-gradient(farthest-side,#0085ff 94%,#0000) top/8px 8px no-repeat,
+        conic-gradient(#0000 30%,#0085ff);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation:s3 1s infinite linear;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+@keyframes s3{ 
+    100%{transform: rotate(1turn)}
+}
