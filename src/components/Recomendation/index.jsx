@@ -5,9 +5,7 @@ import Image from "next/image"
 import { getAnimeData } from "@/services/api-service"
 import Carousel from "better-react-carousel"
 
-const Recomendation = async () => {
-    const now_animes = await getAnimeData('seasons/now')
-
+const Recomendation = async ({ now_animes }) => {
     return (
         <div>
             <Carousel
