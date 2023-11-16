@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const SectionHeader = ({ title, link_href = false, link_title = false }) => {
     return (
-        <div className="mb-3 flex justify-between">
+        <div className="mb-3 mt-10 flex justify-between">
             <h1 className="font-bold text-xl text-color-light">{title}</h1>
             { 
                 (!link_href || !link_title) 

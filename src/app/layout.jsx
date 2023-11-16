@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning={true}>
       <body className={`${inter.className} bg-color-dark`}>
         <Navbar />
-        <main className="my-5">
+        <main className="my-5 container mx-auto px-3">
           {children}
         </main>
       </body>

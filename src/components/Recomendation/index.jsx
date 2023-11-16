@@ -44,9 +44,9 @@ const Recomendation = async ({ now_animes }) => {
                     now_animes?.data?.map((anime, index) => {
                         return(
                             <Carousel.Item key={index}>
-                                    <div className="">
-                                        <Image src={anime.images.webp.large_image_url} alt={anime.images.jpg.large_image_url} width={200} height={300} className="fill-image xl:h-96 lg:h-80 md:h-72 sm:h-60 h-52"/>
-                                    </div>
+                                    <Link href={`/anime/${anime.mal_id}`} className="">
+                                        <Image src={anime.images.webp.large_image_url} alt={anime.images.jpg.large_image_url} width={200} height={300} className="anime-card-img2 xl:h-96 lg:h-80 md:h-72 sm:h-60 h-52"/>
+                                    </Link>
                             </Carousel.Item>
                         )
                     })

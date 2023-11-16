@@ -7,7 +7,7 @@ const Page = async({ params }) => {
     const anime = await getAnimeData(`anime/${params.id}`)
 
     return (
-        <div className="mx-5">
+        <div className="">
             <div className="flex flex-col gap-5">
                 <div className="flex md:flex-row flex-col gap-5">
 

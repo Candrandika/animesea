@@ -17,13 +17,26 @@
     width: 100%;
     object-fit: cover;
     transition: 0.3s ease all;
-    border-radius: 5px 5px 0px 0px;
-    transition: all .2s;
+    border-radius: 7px 7px 0px 0px;
 }
 
 .anime-card-img:hover {
     scale: 105%;
     border-radius: 5px;
+}
+
+.anime-card-img2 {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s ease all;
+    border-radius: 7px;
+    filter: grayscale(60%);
+}
+
+.anime-card-img2:hover {
+    zoom: 105%;
+    border-radius: 5px;
+    filter: grayscale(0%)
 }
 
 .detail-image {
