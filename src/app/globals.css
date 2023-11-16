@@ -8,6 +8,11 @@
     margin: 0;
 }
 
+.fill-image {
+    object-fit: cover;
+    width: 100%;
+}
+
 .anime-card-img {
     width: 100%;
     object-fit: cover;
