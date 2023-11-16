@@ -16,12 +16,12 @@ const Search = () => {
     const handleSearch = (e) => {
         e.preventDefault()
         const search_key = searchRef.current.value
-        if(!search_key || search_key == " " || search_key == "  ") return
+        if(!search_key || search_key.trim() == "") return
         router.push(`/search/${search_key}`)
     }
 
     return (
-        <div className="relative mt-2 rounded-md shadow-sm">
+        <div className="relative md:mt-0 mt-2 rounded-md shadow-sm">
             <input
                 type="text"
                 name="search"
